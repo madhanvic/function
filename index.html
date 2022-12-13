@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section>
+      <div class="overall-container">
+        <div class="container-0">
+          <div class="sub-container-0 period-container"></div>
+          <div class="sub-container-0 company-container"></div>
+          <div class="sub-container-0 fleet-container"></div>
+          <div class="sub-container-0 flag-container"></div>
+          <div class="sub-container-0 type-container"></div>
+          <div class="sub-container-0 vessel-container"></div>
+          <div class="sub-container-0 yard-container"></div>
+        </div>
+        <div class="radio-container">
+          <div class="input-grp">
+            <input
+              type="radio"
+              class="radio-input"
+              id="year"
+              value="year"
+              name="period"
+              checked
+            />
+            <label for="year" class="input-label">Year</label>
+          </div>
+          <div class="input-grp">
+            <input
+              type="radio"
+              class="radio-input"
+              id="half"
+              value="half"
+              name="period"
+            />
+            <label for="half" class="input-label">Half</label>
+          </div>
+          <div class="input-grp">
+            <input
+              type="radio"
+              class="radio-input"
+              id="quater"
+              value="quater"
+              name="period"
+            />
+            <label for="quater" class="input-label">Quarter</label>
+          </div>
+        </div>
+
+        <div class="container1">
+          <div class="sub-container active">
+            <div class="input-grp">
+              <input
+                type="checkbox"
+                class="common-input period-input year-input period-year"
+                value="2020"
+                id="2020"
+                target="period-container"
+              />
+              <label for="2020" class="input-label">2020</label>
+            </div>
+            <div class="input-grp">
+              <input
+                type="checkbox"
+                class="common-input period-input year-input period-year"
+                value="2021"
+                id="2021"
+                target="period-container"
+              />
+              <label for="2021" class="input-label">2021</label>
+            </div>
+            <div class="input-grp">
+              <input
+                type="checkbox"
+                class="common-input period-input year-input period-year"
+                value="2022"
+                id="2022"
+                target="period-container"
+              />
+              <label for="2022" class="input-label">2022</label>
+            </div>
+          </div>
+          <div class="sub-container">
+            <div class="input-grp">
+              <input
+                type="checkbox"
+                class="common-input period-input half-input year-input"
+                value="2020-h1"
+                id="2020-h1"
+                target="period-container"
+              />
+              <label for="2020-h1" class="input-label">2020-h1</label>
+            </div>
+            <div class="input-grp">
+              <input
+                type="checkbox"
+                class="common-input period-input half-input year-input"
+                value="2020-h2"
+                id="2020-h2"
+                target="period-container"
+              />
+              <label for="2020-h2" class="input-label">2020-h2</label>
+            </div>
+            <div class="input-grp">
+              <input
+                type="checkbox"
+                class="common-input period-input half-input year-input"
+                value="2021-h1"
+                id="2021-h1"
+                target="period-container"
+              />
+              <label for="2021-h1" class="input-label">2021-h1</label>
+            </div>
+            <div class="input-grp">
+              <input
+                type="checkbox"
+                class="common-input period-input half-input year-input"
+                value="2021-h2"
+                id="2021-h2"
+                target="period-container"
+              />
+              <label for="2021-h2" class="input-label">2021-h2</label>
+            </div>
+            <div class="input-grp">
+              <input
+                type="checkbox"
+                class="common-input period-input half-input year-input"
+                value="2022-h1"
+                id="2022-h1"
+                target="period-container"
+              />
+              <label for="2022-h1" class="input-label">2022-h1</label>
+            </div>
+            <div class="input-grp">
+              <input
+                type="checkbox"
+                class="common-input period-input half-input year-input"
+                value="2022-h2"
+                id="2022-h2"
+                target="period-container"
+              />
+              <label for="2022-h2" class="input-label">2022-h2</label>
+            </div>
+          </div>
+          <div class="sub-container">
+            <div class="input-grp">
+              <input
+                type="checkbox"
+                class="common-input period-input quater-input year-input"
+                value="2020-q1"
+                id="2020-q1"
+                target="period-container"
+              />
+              <label for="2020-q1" class="input-label">2020-q1</label>
+            </div>
+            <div class="input-grp">
+              <input
+                type="checkbox"
+                class="common-input period-input quater-input year-input"
+                value="2020-q2"
+                id="2020-q2"
+                target="period-container"
+              />
+              <label for="2020-q2" class="input-label">2020-q2</label>
+            </div>
+            <div class="input-grp">
+              <input
+                type="checkbox"
+                class="common-input period-input quater-input year-input"
+                value="2020-q3"
+                id="2020-q3"
+                target="period-container"
+              />
+              <label for="2020-q3" class="input-label">2020-q3</label>
+            </div>
+            <div class="input-grp">
+              <input
+                type="checkbox"
+                class="common-input period-input quater-input year-input"
+                value="2021-q1"
+                id="2021-q1"
+                target="period-container"
+              />
+              <label for="2021-q1" class="input-label">2021-q1</label>
+            </div>
+            <div class="input-grp">
+              <input
+                type="checkbox"
+                class="common-input period-input quater-input year-input"
+                value="2021-q2"
+                id="2021-q2"
+                target="period-container"
+              />
+              <label for="2021-q2" class="input-label">2021-q2</label>
+            </div>
+            <div class="input-grp">
+              <input
+                type="checkbox"
+                class="common-input period-input quater-input year-input"
+                value="2021-q3"
+                id="2021-q3"
+                target="period-container"
+              />
+              <label for="2021-q3" class="input-label">2021-q3</label>
+            </div>
+            <div class="input-grp">
+              <input
+                type="checkbox"
+                class="common-input period-input quater-input year-input"
+                value="2022-q1"
+                id="2022-q1"
+                target="period-container"
+              />
+              <label for="2022-q1" class="input-label">2022-q1</label>
+            </div>
+            <div class="input-grp">
+              <input
+                type="checkbox"
+                class="common-input period-input quater-input year-input"
+                value="2022-q2"
+                id="2022-q2"
+                target="period-container"
+              />
+              <label for="2022-q2" class="input-label">2022-q2</label>
+            </div>
+            <div class="input-grp">
+              <input
+                type="checkbox"
+                class="common-input period-input quater-input year-input"
+                value="2022-q3"
+                id="2022-q3"
+                target="period-container"
+              />
+              <label for="2022-q3" class="input-label">2022-q3</label>
+            </div>
+          </div>
+        </div>
+        <div class="container2">
+          <div class="input-grp">
+            <input
+              type="checkbox"
+              class="common-input company-input all-input all-company-input"
+              value="All"
+              id="call"
+              target="company-container"
+            />
+            <label for="call" class="input-label">All</label>
+          </div>
+          <div class="input-grp">
+            <input
+              type="checkbox"
+              class="common-input company-input"
+              value="Sun"
+              id="sun"
+              target="company-container"
+            />
+            <label for="sun" class="input-label">Sun</label>
+          </div>
+          <div class="input-grp">
+            <input
+              type="checkbox"
+              class="common-input company-input"
+              value="Shine"
+              id="shine"
+              target="company-container"
+            />
+            <label for="shine" class="input-label">Shine</label>
+          </div>
+        </div>
+        <div class="container3">
+          <div class="input-grp">
+            <input
+              type="checkbox"
+              class="common-input fleet-input all-input all-fleet-input"
+              value="All"
+              id="fall"
+              target="fleet-container"
+            />
+            <label for="fall" class="input-label">All</label>
+          </div>
+          <div class="input-grp">
+            <input
+              type="checkbox"
+              class="common-input fleet-input"
+              value="Fleet-1"
+              id="fleet1"
+              target="fleet-container"
+            />
+            <label for="fleet1" class="input-label">Fleet-1</label>
+          </div>
+          <div class="input-grp">
+            <input
+              type="checkbox"
+              class="common-input fleet-input"
+              value="Fleet-2"
+              id="fleet2"
+              target="fleet-container"
+            />
+            <label for="fleet2" class="input-label">Fleet-2</label>
+          </div>
+          <div class="input-grp">
+            <input
+              type="checkbox"
+              class="common-input fleet-input"
+              value="Fleet-3"
+              id="fleet3"
+              target="fleet-container"
+            />
+            <label for="fleet3" class="input-label">Fleet-3</label>
+          </div>
+          <div class="input-grp">
+            <input
+              type="checkbox"
+              class="common-input fleet-input"
+              value="Fleet-4"
+              id="fleet4"
+              target="fleet-container"
+            />
+            <label for="fleet4" class="input-label">Fleet-4</label>
+          </div>
+        </div>
+        <div class="container4">
+          <div class="input-grp">
+            <input
+              type="checkbox"
+              class="common-input flag-input"
+              value="Lib"
+              id="lib"
+              target="flag-container"
+            />
+            <label for="lib" class="input-label">Lib</label>
+          </div>
+          <div class="input-grp">
+            <input
+              type="checkbox"
+              class="common-input flag-input"
+              value="Sin"
+              id="sin"
+              target="flag-container"
+            />
+            <label for="sin" class="input-label">Sin</label>
+          </div>
+          <div class="input-grp">
+            <input
+              type="checkbox"
+              class="common-input flag-input"
+              value="Pan"
+              id="pan"
+              target="flag-container"
+            />
+            <label for="pan" class="input-label">Pan</label>
+          </div>
+          <div class="input-grp">
+            <input
+              type="checkbox"
+              class="common-input flag-input"
+              value="Mi"
+              id="mi"
+              target="flag-container"
+            />
+            <label for="mi" class="input-label">Mi</label>
+          </div>
+        </div>
+        <div class="container5">
+          <div class="input-grp">
+            <input
+              type="checkbox"
+              class="common-input type-input all-input all-type-input"
+              value="All"
+              id="tall"
+              target="type-container"
+            />
+            <label for="tall" class="input-label">All</label>
+          </div>
+          <div class="input-grp">
+            <input
+              type="checkbox"
+              class="common-input type-input"
+              value="Tanker"
+              id="tanker"
+              target="type-container"
+            />
+            <label for="tanker" class="input-label">Tanker</label>
+          </div>
+          <div class="input-grp">
+            <input
+              type="checkbox"
+              class="common-input type-input"
+              value="Cargo"
+              id="cargo"
+              target="type-container"
+            />
+            <label for="cargo" class="input-label">Cargo</label>
+          </div>
+        </div>
+        <div class="container6">
+          <select class="common-input vessel-input" target="vessel-container">
+            <option value="Select">Select</option>
+            <option value="Boi">Boi</option>
+            <option value="Moi">Moi</option>
+          </select>
+        </div>
+        <div class="container7">
+          <div class="input-grp">
+            <input
+              type="checkbox"
+              class="common-input yard-input"
+              value="Korea"
+              id="korea"
+              target="yard-container"
+            />
+            <label for="korea" class="input-label">Korea</label>
+          </div>
+        </div>
+        <div class="container8">
+          <button class="submit-btn">Submin</button>
+        </div>
+      </div>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
